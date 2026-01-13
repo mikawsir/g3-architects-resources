@@ -102,20 +102,13 @@ main>section {
     .teams {
         flex-direction: column;
     }
-
-    .team-img-container {
+    .facts-container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 24px;
+        justify-items: center;
     }
-}
-/* medium device */
-@media screen and (min-width:576px) and (max-width:992px) {
-    .teams{
-        flex-direction: column;
-    }
-    .our-feauters{
-        margin: 50px auto;
+    .team-img-container,{
+        grid-template-columns:repeat(1, 1fr);
     }
 }
 /* team and feature releted styles */
@@ -136,13 +129,20 @@ main>section {
 #quick-list {
     font-weight: 500;
 }
+
 /* some facts releted styles */
-.facts-container{
+.facts-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    justify-items: center;
+    margin-top: 50px;
+
 }
-.fact-card{
+
+.fact-card {
     border: 1px solid #FF900E;
     width: 240px;
     height: 240px;
@@ -151,24 +151,55 @@ main>section {
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+
 }
-.fact-number{
+
+.fact-number {
     font-size: 2.8rem;
     font-weight: 600;
-    margin-top:5px ;
-    margin-bottom:10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
-.fact-name{
+
+.fact-name {
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 10px;
 }
-.fact-discription{
+
+.fact-discription {
     max-width: 540px;
 }
+
 .team-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+}
+
+/* medium device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams {
+        flex-direction: column;
+    }
+    .our-feauters {
+        margin: 50px auto;
+    }
+}
+/*  sponsor releted style */
+.sponsor-info{
+    max-width: 540px;
+    margin:50px auto ;
+    text-align: center;
+}
+.sponsor-companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+}
+.sponsor-companies img{
+    filter:grayscale(100%)
 }
