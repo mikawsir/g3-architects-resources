@@ -136,7 +136,37 @@ main>section {
 #quick-list {
     font-weight: 500;
 }
-
+/* some facts releted styles */
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+}
+.fact-card{
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top:5px ;
+    margin-bottom:10px;
+}
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.fact-discription{
+    max-width: 540px;
+}
 .team-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
